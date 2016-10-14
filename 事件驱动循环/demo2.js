@@ -87,6 +87,18 @@ myEvent3.on('error', function(){
 })
 myEvent3.emit('error')
 
+//该事件在添加新监听器时被触发。
+myEvent3.on('newListener', function(event, callback){
+	console.log(event, callback)
+})
 
+myEvent3.on('b', b)
 
+//从指定监听器数组中删除一个监听器。
+myEvent3.on('removeListener', function(event, callback){
+	console.log(event, callback)
+})
 
+myEvent3.removeListener('b', b)
+
+myEvent3.removeAllListeners()
