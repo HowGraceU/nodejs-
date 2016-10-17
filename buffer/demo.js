@@ -23,9 +23,9 @@ for(var i = 0; i < 10; i++){
 	console.log(i, buf[i])
 }
 len = buf.write("www.runoob.com");
-for(var i = 0; i < 256; i++){
-	console.log(i, buf[i])
-}
+// for(var i = 0; i < 256; i++){
+// 	console.log(i, buf[i])
+// }
 
 console.log("写入字节数 : "+  len);
 
@@ -57,7 +57,7 @@ var buffer2 = new Buffer('ABCD');
 var result = buffer1.compare(buffer2);
 var equal = buffer1.equals(buffer2);
 
-console.log('进行的是前面减后面的过程' + result)
+console.log('进行的是前面减后面的过程 ' + result + '  ' + equal)
 
 //缓冲区拷贝
 var buffer1 = new Buffer('ABC');

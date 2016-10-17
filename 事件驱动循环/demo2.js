@@ -7,9 +7,13 @@ myEvent.addListener('a', function(){
 	console.log('addListener events a')
 })
 
-//为指定事件注册一个监听器
+//为指定事件注册一个监听器（尾部）
 myEvent.on('a', function(){
 	console.log('on events a')
+})
+
+myEvent.addListener('a', function(){
+	console.log('addListener events a 2')
 })
 
 //once触发一次事件后解除绑定
