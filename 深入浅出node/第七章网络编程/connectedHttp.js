@@ -20,4 +20,4 @@ var req = http.request(options, function(res) {
    });
 });
 req.write('jqx'); 
-req.end(); 
+req.end('jqx'); 
